@@ -1,0 +1,25 @@
+.row {
+    padding: 5px 5px;
+    margin: 5px;
+}
+
+.col-md-12 {
+    width: 50vw;
+    height: 50vh;
+}
+
+.red {
+    background-color: #f36523;
+}
+
+.green {
+    background-color: #8dc740;
+}
+
+.blue {
+    background-color: #00aef0;
+}
+
+.yellow {
+    background-color: #ffc20f;
+}
