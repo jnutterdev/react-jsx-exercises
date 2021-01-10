@@ -1,25 +1,56 @@
 let TextInput = () => {
     return (
         <div className="container">
-            <Form>
-                <Form.Group controlId="exampleForm.ControlInput1">
-                <Form.Label>Enter text</Form.Label>
-                <Form.Control type="text" placeholder="Some text..." />
-            </Form>
+                <p>Enter:</p>
+                <input type="text"/>
         </div>
     )
 }
 
-let YesNoRadio = () => {
-    return <span>Make this component render two styled radio button side by side labelled "yes" and "no"</span>
+
+
+let YesNoRadio = (props) => {
+
+
+
+    return (
+        <div>
+            <label>
+                <input type="radio" value="yes" />
+                Yes
+            </label>
+            <br />
+            <label>
+                <input type="radio" value="no"  />
+                No
+            </label>
+
+        </div>
+    );
 }
 
 let SubmitButton = () => {
-    return <span>Make this component render a styled button of type "submit"</span>
+    return (
+        <div>
+            <button type="submit">Yes or No?</button>
+        </div>
+    )
 }
 
 let Form = () => {
-    return <span>Make this Component render a form tag with 3 text inputs, two yes/no radio buttons, and a submit button </span>
+    return (
+        <div className="container">
+                 <h1>Hello</h1>
+                <TextInput />
+                <TextInput />
+                <TextInput />
+                <YesNoRadio />
+                <YesNoRadio />
+                <SubmitButton />
+          
+            </div>
+      
+    )
 }
 
 
