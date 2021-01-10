@@ -1,5 +1,13 @@
 let TextInput = () => {
-    return <span>Make this component render a styled text input tag</span>
+    return (
+        <div className="container">
+            <Form>
+                <Form.Group controlId="exampleForm.ControlInput1">
+                <Form.Label>Enter text</Form.Label>
+                <Form.Control type="text" placeholder="Some text..." />
+            </Form>
+        </div>
+    )
 }
 
 let YesNoRadio = () => {
