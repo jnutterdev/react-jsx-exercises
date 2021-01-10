@@ -13,7 +13,7 @@ let ListGroupItem = () => {
 let ListGroup = () => {
     return (
         <div className="container">
-            <ul class="list-group">
+            <ul className="list-group">
                     <ListGroupItem />
             </ul>
         </div>
