@@ -1,17 +1,39 @@
 let ProfilePic = () => {
-    return <span>Make this component render an image</span>
+    return (
+        <div className="container">
+            <img src="space.gif" alt="Space!" width="100" height="auto" />
+        </div>
+    );
 }
 
-let CommentBody = () => {
-    return <span>Make this component render a username in bold above the comment text</span>
+
+let CommentBody = (userName) => {
+    return (
+        <div>   
+            <strong>Username</strong>
+            <p>Some comment text</p>
+        </div>
+    );
 }
 
 let Comment = () => {
-    return <span>Make each comment render a profile picture and the comment body</span>
+    return (
+        <div className="container">
+         <ProfilePic />
+         <CommentBody />
+         </div>
+       );
 }
 
 let Comments = () => {
-    return <span>Make this component render a list of comments</span>
+    return ( 
+    <div className="container">
+       <Comment />
+       <Comment />
+       <Comment />
+       <Comment />
+    </div>
+    );
 }
 
 ReactDOM.render(<Comments />, document.getElementById('root'))
